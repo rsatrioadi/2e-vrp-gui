@@ -1,0 +1,36 @@
+algorithmSource:
+  PackageAssignment:
+      NearestHammingSatellite: NearestHammingSatellite.java.temp
+      NearestSatellite: NearestSatellite.java.temp
+      RandomSatellite: RandomSatellite.java.temp
+      Custom: CustomSatellite.java.temp
+  SelectVehicle:
+      EarliestBiggestVehicle: EarliestBiggestVehicle.java.temp
+      RandomVehicle: RandomVehicle.java.temp
+      Custom: CustomVehicle.java.temp
+  PackageSearch:
+      NearestPackage: NearestPackage.java.temp
+      RandomPackage: RandomPackage.java.temp
+      Custom: CustomPackage.java.temp
+  PackageNodeAvailability:
+      SimpleAvailability: SimpleAvailability.java.temp
+      Custom: CustomAvailability.java.temp
+algorithmConfigs:
+  - name: "Customer Package Assignment Algorithm"
+    key: CustomerPackageAssignmentAlgorithm
+    algorithm: PackageAssignment
+  - name: "E2 Select Vehicle Algorithm"
+    key: E2SelectVehicleAlgorithm
+    algorithm: SelectVehicle
+  - name: "E2 Package Search Algorithm"
+    key: E2PackageSearchAlgorithm
+    algorithm: PackageSearch
+  - name: "E2 Satellite Package Availability"
+    key: SatellitePackageAvailabilityAlgorithm
+    algorithm: PackageNodeAvailability
+  - name: "E1 Select Vehicle Algorithm"
+    key: E1SelectVehicleAlgorithm
+    algorithm: SelectVehicle
+  - name: "E1 Package Search Algorithm"
+    key: E1PackageSearchAlgorithm
+    algorithm: PackageSearch

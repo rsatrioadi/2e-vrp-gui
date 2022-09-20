@@ -1,0 +1,231 @@
+!!nl.tue.vrp.output.Output
+customers:
+  - availability: {endTime: 74, startTime: 54}
+    demand: 20
+    depotID: 2
+    id: 6
+    location: {x: 4, y: 10}
+    serviceTime: 10
+    type: DELIVERY
+  - availability: {endTime: 110, startTime: 90}
+    demand: 20
+    depotID: 2
+    id: 7
+    location: {x: -22, y: -3}
+    serviceTime: 10
+    type: DELIVERY
+  - availability: {endTime: 98, startTime: 78}
+    demand: 20
+    depotID: 1
+    id: 8
+    location: {x: -7, y: -8}
+    serviceTime: 10
+    type: DELIVERY
+  - availability: {endTime: 256, startTime: 238}
+    demand: 20
+    depotID: 2
+    id: 9
+    location: {x: -1, y: -7}
+    serviceTime: 10
+    type: DELIVERY
+  - availability: {endTime: 50, startTime: 30}
+    demand: 20
+    depotID: 1
+    id: 10
+    location: {x: -8, y: -12}
+    serviceTime: 10
+    type: DELIVERY
+  - availability: {endTime: 240, startTime: 220}
+    demand: 20
+    depotID: 1
+    id: 11
+    location: {x: -14, y: 9}
+    serviceTime: 10
+    type: DELIVERY
+  - availability: {endTime: 252, startTime: 232}
+    demand: 20
+    depotID: 2
+    id: 12
+    location: {x: -1, y: 1}
+    serviceTime: 10
+    type: DELIVERY
+  - availability: {endTime: 153, startTime: 133}
+    demand: 10
+    depotID: 2
+    id: 13
+    location: {x: -8, y: 18}
+    serviceTime: 10
+    type: DELIVERY
+  - availability: {endTime: 263, startTime: 243}
+    demand: 20
+    depotID: 2
+    id: 14
+    location: {x: -4, y: -6}
+    serviceTime: 10
+    type: PICKUP
+  - availability: {endTime: 112, startTime: 92}
+    demand: 10
+    depotID: 1
+    id: 15
+    location: {x: -2, y: 26}
+    serviceTime: 10
+    type: PICKUP
+  - availability: {endTime: 213, startTime: 193}
+    demand: 10
+    depotID: 1
+    id: 16
+    location: {x: 7, y: -2}
+    serviceTime: 10
+    type: PICKUP
+  - availability: {endTime: 79, startTime: 59}
+    demand: 10
+    depotID: 2
+    id: 17
+    location: {x: 0, y: 2}
+    serviceTime: 10
+    type: PICKUP
+  - availability: {endTime: 172, startTime: 152}
+    demand: 20
+    depotID: 1
+    id: 18
+    location: {x: -28, y: 1}
+    serviceTime: 10
+    type: PICKUP
+  - availability: {endTime: 104, startTime: 84}
+    demand: 10
+    depotID: 1
+    id: 19
+    location: {x: 6, y: -1}
+    serviceTime: 10
+    type: PICKUP
+  - availability: {endTime: 200, startTime: 180}
+    demand: 10
+    depotID: 2
+    id: 20
+    location: {x: 10, y: -19}
+    serviceTime: 10
+    type: PICKUP
+depots:
+  - availability: null
+    id: 1
+    location: {x: 2, y: 33}
+    routes:
+      - vehicleAvailableFrom: 258
+        vehicleID: 21
+        visits:
+          - {accumulatedCost: 0.0, arrivalTime: 0, customerID: 0, demand: 0, departureTime: 0,
+             legCost: 0.0, load: 20, nodeID: 1, remainingFuel: 0.0, vehicleID: 21}
+          - {accumulatedCost: 21.2602916254693, arrivalTime: 3, customerID: 11, demand: 20,
+             departureTime: 13, legCost: 21.2602916254693, load: 0, nodeID: 4, remainingFuel: 0.0,
+             vehicleID: 21}
+          - {accumulatedCost: 54.78640085394972, arrivalTime: 254, customerID: 16, demand: 10,
+             departureTime: 254, legCost: 33.52610922848042, load: 10, nodeID: 3, remainingFuel: 0.0,
+             vehicleID: 21}
+          - {accumulatedCost: 86.40917745563351, arrivalTime: 258, customerID: 0, demand: 0,
+             departureTime: 258, legCost: 31.622776601683793, load: 10, nodeID: 1, remainingFuel: 0.0,
+             vehicleID: 21}
+    satisfied: false
+    serviceTime: 0
+    vehicles:
+      - {averageSpeed: 10.0, fuelCapacity: 0, fuelPerDistance: 0, id: 21}
+  - availability: null
+    id: 2
+    location: {x: -35, y: -18}
+    routes:
+      - vehicleAvailableFrom: 295
+        vehicleID: 22
+        visits:
+          - {accumulatedCost: 0.0, arrivalTime: 0, customerID: 0, demand: 0, departureTime: 0,
+             legCost: 0.0, load: 30, nodeID: 2, remainingFuel: 0.0, vehicleID: 22}
+          - {accumulatedCost: 41.88078318274385, arrivalTime: 5, customerID: 13, demand: 10,
+             departureTime: 15, legCost: 41.88078318274385, load: 20, nodeID: 4, remainingFuel: 0.0,
+             vehicleID: 22}
+          - {accumulatedCost: 41.88078318274385, arrivalTime: 15, customerID: 12, demand: 20,
+             departureTime: 25, legCost: 0.0, load: 0, nodeID: 4, remainingFuel: 0.0, vehicleID: 22}
+          - {accumulatedCost: 41.88078318274385, arrivalTime: 263, customerID: 14, demand: 20,
+             departureTime: 273, legCost: 0.0, load: 20, nodeID: 4, remainingFuel: 0.0, vehicleID: 22}
+          - {accumulatedCost: 83.02686440562582, arrivalTime: 278, customerID: 20, demand: 10,
+             departureTime: 288, legCost: 41.14608122288197, load: 30, nodeID: 5, remainingFuel: 0.0,
+             vehicleID: 22}
+          - {accumulatedCost: 145.38871171630126, arrivalTime: 295, customerID: 0, demand: 0,
+             departureTime: 295, legCost: 62.36184731067546, load: 30, nodeID: 2, remainingFuel: 0.0,
+             vehicleID: 22}
+    satisfied: false
+    serviceTime: 0
+    vehicles:
+      - {averageSpeed: 10.0, fuelCapacity: 0, fuelPerDistance: 0, id: 22}
+satellites:
+  - availability: null
+    id: 3
+    location: {x: 20, y: 7}
+    routes:
+      - vehicleAvailableFrom: 254
+        vehicleID: 23
+        visits:
+          - {accumulatedCost: 0.0, arrivalTime: 0, customerID: 0, demand: 0, departureTime: 0,
+             legCost: 0.0, load: 20, nodeID: 3, remainingFuel: 0.0, vehicleID: 23}
+          - {accumulatedCost: 15.811388300841896, arrivalTime: 193, customerID: 16, demand: 10,
+             departureTime: 203, legCost: 15.811388300841896, load: 30, nodeID: 16, remainingFuel: 0.0,
+             vehicleID: 23}
+          - {accumulatedCost: 25.2453694328985, arrivalTime: 238, customerID: 9, demand: 20,
+             departureTime: 248, legCost: 9.433981132056603, load: 10, nodeID: 9, remainingFuel: 0.0,
+             vehicleID: 23}
+          - {accumulatedCost: 50.48422836114642, arrivalTime: 254, customerID: 0, demand: 0,
+             departureTime: 254, legCost: 25.238858928247925, load: 10, nodeID: 3, remainingFuel: 0.0,
+             vehicleID: 23}
+    satisfied: false
+    serviceTime: 0
+    vehicles:
+      - {averageSpeed: 5.0, fuelCapacity: 0, fuelPerDistance: 0, id: 23}
+  - availability: null
+    id: 4
+    location: {x: -12, y: 17}
+    routes:
+      - vehicleAvailableFrom: 263
+        vehicleID: 24
+        visits:
+          - {accumulatedCost: 0.0, arrivalTime: 0, customerID: 0, demand: 0, departureTime: 10,
+             legCost: 0.0, load: 50, nodeID: 4, remainingFuel: 0.0, vehicleID: 24}
+          - {accumulatedCost: 4.123105625617661, arrivalTime: 133, customerID: 13, demand: 10,
+             departureTime: 143, legCost: 4.123105625617661, load: 40, nodeID: 13, remainingFuel: 0.0,
+             vehicleID: 24}
+          - {accumulatedCost: 14.939759452009628, arrivalTime: 220, customerID: 11, demand: 20,
+             departureTime: 230, legCost: 10.816653826391969, load: 20, nodeID: 11, remainingFuel: 0.0,
+             vehicleID: 24}
+          - {accumulatedCost: 30.204096974483377, arrivalTime: 234, customerID: 12, demand: 20,
+             departureTime: 244, legCost: 15.264337522473747, load: 0, nodeID: 12, remainingFuel: 0.0,
+             vehicleID: 24}
+          - {accumulatedCost: 37.819870080347286, arrivalTime: 246, customerID: 14, demand: 20,
+             departureTime: 256, legCost: 7.615773105863909, load: 20, nodeID: 14, remainingFuel: 0.0,
+             vehicleID: 24}
+          - {accumulatedCost: 62.17146140411913, arrivalTime: 263, customerID: 0, demand: 0,
+             departureTime: 273, legCost: 24.351591323771842, load: 20, nodeID: 4, remainingFuel: 0.0,
+             vehicleID: 24}
+    satisfied: false
+    serviceTime: 10
+    vehicles:
+      - {averageSpeed: 4.0, fuelCapacity: 0, fuelPerDistance: 0, id: 24}
+  - availability: null
+    id: 5
+    location: {x: 25, y: -1}
+    routes:
+      - vehicleAvailableFrom: 198
+        vehicleID: 25
+        visits:
+          - {accumulatedCost: 0.0, arrivalTime: 0, customerID: 0, demand: 0, departureTime: 10,
+             legCost: 0.0, load: 0, nodeID: 5, remainingFuel: 0.0, vehicleID: 25}
+          - {accumulatedCost: 23.430749027719962, arrivalTime: 180, customerID: 20, demand: 10,
+             departureTime: 190, legCost: 23.430749027719962, load: 10, nodeID: 20, remainingFuel: 0.0,
+             vehicleID: 25}
+          - {accumulatedCost: 46.861498055439924, arrivalTime: 198, customerID: 0, demand: 0,
+             departureTime: 208, legCost: 23.430749027719962, load: 10, nodeID: 5, remainingFuel: 0.0,
+             vehicleID: 25}
+    satisfied: true
+    serviceTime: 10
+    vehicles:
+      - {averageSpeed: 3.0, fuelCapacity: 0, fuelPerDistance: 0, id: 25}
+satisfied: 0
+timeFinished: 0
+totalDistance: 0
+totalFuelUsed: 0
+vehicle: null

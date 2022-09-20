@@ -1,0 +1,55 @@
+customers:
+  - availability: {endTime: 3, startTime: 1}
+    demand: 0
+    depotID: 1
+    id: 3
+    location: {x: -20, y: 0}
+    serviceTime: 10
+    type: PICKUP
+  - availability: {endTime: 1000, startTime: 20}
+    demand: 0
+    depotID: 1
+    id: 4
+    location: {x: 5, y: 5}
+    serviceTime: 10
+    type: DELIVERY
+depots:
+  - availability: null
+    id: 1
+    location: {x: 0, y: 0}
+    routes:
+      - vehicleAvailableFrom: 2
+        vehicleID: 7
+        visits:
+          - {accumulatedCost: 0.0, arrivalTime: 0, customerID: 0, demand: 0, departureTime: 0,
+             legCost: 0.0, load: 0, nodeID: 1, remainingFuel: 0.0, vehicleID: 7}
+          - {accumulatedCost: 5.0, arrivalTime: 1, customerID: 4, demand: 0, departureTime: 1,
+             legCost: 5.0, load: 0, nodeID: 2, remainingFuel: 0.0, vehicleID: 7}
+          - {accumulatedCost: 10.0, arrivalTime: 2, customerID: 0, demand: 0, departureTime: 2,
+             legCost: 5.0, load: 0, nodeID: 1, remainingFuel: 0.0, vehicleID: 7}
+    satisfied: false
+    serviceTime: 0
+    vehicles:
+      - {averageSpeed: 10.0, fuelCapacity: 0, fuelPerDistance: 0, id: 7}
+satellites:
+  - availability: null
+    id: 2
+    location: {x: 5, y: 0}
+    routes:
+      - vehicleAvailableFrom: 35
+        vehicleID: 8
+        visits:
+          - {accumulatedCost: 0.0, arrivalTime: 0, customerID: 0, demand: 0, departureTime: 0,
+             legCost: 0.0, load: 0, nodeID: 2, remainingFuel: 0.0, vehicleID: 8}
+          - {accumulatedCost: 5.0, arrivalTime: 20, customerID: 4, demand: 0, departureTime: 30,
+             legCost: 5.0, load: 0, nodeID: 4, remainingFuel: 0.0, vehicleID: 8}
+          - {accumulatedCost: 10.0, arrivalTime: 35, customerID: 0, demand: 0, departureTime: 35,
+             legCost: 5.0, load: 0, nodeID: 2, remainingFuel: 0.0, vehicleID: 8}
+    satisfied: false
+    serviceTime: 0
+    vehicles:
+      - {averageSpeed: 1.0, fuelCapacity: 0, fuelPerDistance: 0, id: 8}
+satisfied: false
+timeFinished: 35
+totalDistance: 10.0
+totalFuelUsed: 0.0

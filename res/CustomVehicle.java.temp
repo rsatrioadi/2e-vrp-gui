@@ -1,0 +1,13 @@
+package tmp;
+
+import nl.tue.vrp.strategy.selectvehicle.SelectVehicle;
+import nl.tue.vrp.model.VehicleAvailability;
+
+import java.util.List;
+
+public class CustomVehicle implements SelectVehicle {
+    @Override
+    public VehicleAvailability getVehicle(List<VehicleAvailability> vehicles) {
+        return null;
+    }
+}

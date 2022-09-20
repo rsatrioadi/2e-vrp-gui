@@ -1,0 +1,11 @@
+package tmp;
+
+import nl.tue.vrp.strategy.packagenodeavailability.PackageNodeAvailability;
+import nl.tue.vrp.model.*;
+
+public class CustomAvailability implements PackageNodeAvailability {
+    @Override
+    public Pair<TimeWindow, TimeWindow> getPackagesAvailability(Vehicle vehicle, Route route, TimeWindow vehicleAvailability) {
+        return null;
+    }
+}

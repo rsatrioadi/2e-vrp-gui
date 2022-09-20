@@ -1,0 +1,15 @@
+package tmp;
+
+import nl.tue.vrp.strategy.packageassignment.PackageAssignment;
+import nl.tue.vrp.model.PackageAvailability;
+import nl.tue.vrp.model.nodes.Satellite;
+
+import java.util.List;
+
+public class CustomSatellite implements PackageAssignment {
+    @Override
+    public Satellite getAssignedSatellite(PackageAvailability aPackage, List<Satellite> satellites) {
+        // TODO: check stream parallel is feasible on low number of satellites
+        return null;
+    }
+}

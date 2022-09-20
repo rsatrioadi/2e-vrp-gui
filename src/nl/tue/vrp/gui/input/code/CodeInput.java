@@ -33,6 +33,7 @@ public class CodeInput {
         boolean first = true;
         for (var entry: optionsConfig.entrySet()) {
             JRadioButton option = new JRadioButton(entry.getKey());
+            option.setActionCommand(entry.getKey());
             option.setAlignmentX(Component.LEFT_ALIGNMENT);
             radioButtonList.add(option);
             algoOptionsGroup.add(option);
@@ -51,6 +52,7 @@ public class CodeInput {
             });
         }
         JRadioButton customOption = new JRadioButton("Custom");
+        customOption.setActionCommand("Custom");
         customOption.setAlignmentX(Component.LEFT_ALIGNMENT);
         radioButtonList.add(customOption);
         algoOptionsGroup.add(customOption);
@@ -74,7 +76,11 @@ public class CodeInput {
         return panel;
     }
 
-    public String getSelectedAlgo() {
+    public String getSelectedAlgoName() {
         return algoOptionsGroup.getSelection().getActionCommand();
+    }
+
+    public String getSelectedAlgo() {
+        return textArea.getText();
     }
 }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inherit-compiler-output="true" inheritJdk="true">
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="jung.jar" scope="COMPILE">
+		<srcroot url="jar://$MODULE_DIR$/../jung/out/artifacts/jung_jar/jung.jar!/"/>
+	</lib>
+	<levels>
+		<level name="IntelliJ IDEA GridLayout" value="project"/>
+		<level name="yaml.snakeyaml" value="project"/>
+		<level name="twoevrpp" value="project"/>
+	</levels>
+</component>

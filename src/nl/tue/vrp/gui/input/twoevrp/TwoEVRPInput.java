@@ -1,6 +1,8 @@
 package nl.tue.vrp.gui.input.twoevrp;
 
 import nl.tue.vrp.gui.filter.YamlFileFilter;
+import nl.tue.vrp.model.Constraints;
+import nl.tue.vrp.model.ConstraintsBuilder;
 
 import javax.swing.*;
 import java.awt.*;
@@ -8,6 +10,7 @@ import java.io.File;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.util.Arrays;
+import java.util.EnumSet;
 
 public class TwoEVRPInput {
     private final JFrame mainFrame;
@@ -18,6 +21,10 @@ public class TwoEVRPInput {
     private final JLabel inputLabel;
     private final JTextArea inputTextArea;
 
+    private final JCheckBox box1;
+    private final JCheckBox box2;
+    private final JCheckBox box3;
+
     public TwoEVRPInput(JFrame mainFrame) {
         this.mainFrame = mainFrame;
         panel = new JPanel();
@@ -27,13 +34,23 @@ public class TwoEVRPInput {
         inputLabel.setAlignmentX(Component.LEFT_ALIGNMENT);
         panel.add(inputLabel);
 
+        box1 = new JCheckBox("capacity");
+        box1.setSelected(true);
+        box2 = new JCheckBox("time");
+        box2.setSelected(true);
+        box3 = new JCheckBox("fuel");
+        panel.add(box1);
+        panel.add(box2);
+        panel.add(box3);
+
         inputTextArea = new JTextArea();
         inputTextArea.setAlignmentX(Component.LEFT_ALIGNMENT);
         inputTextArea.setFont(new Font("Consolas", Font.PLAIN, 12));
         loadFileButton = new JButton("Load from File");
         loadFileButton.addActionListener(e -> {
             JFileChooser fc = new JFileChooser();
-            fc.setCurrentDirectory(new File(System.getProperty("user.home")));
+            fc.setCurrentDirectory(new File(System.getProperty("user.dir")));
+//            fc.setCurrentDirectory(new File(System.getProperty("user.home")));
             fc.setFileFilter(new YamlFileFilter());
             int result = fc.showOpenDialog(mainFrame);
             if (result == JFileChooser.APPROVE_OPTION) {
@@ -61,5 +78,13 @@ public class TwoEVRPInput {
 
     public String get2EVRP() {
         return inputTextArea.getText();
+    }
+
+    public EnumSet<Constraints> getConstraints() {
+        ConstraintsBuilder builder = new ConstraintsBuilder();
+        if (box1.isSelected()) builder.addCapacityCheck();
+        if (box2.isSelected()) builder.addTimeCheck();
+        if (box3.isSelected()) builder.addFuelCheck();
+        return builder.get();
     }
 }
