@@ -27,3 +27,9 @@ hs_err_pid*
 .idea/**/dictionary/
 
 out/
+
+.idea/
+*.iml
+target/
+
+*~
